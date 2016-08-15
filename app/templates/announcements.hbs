@@ -1,0 +1,13 @@
+<h1>Current announcements</h1>
+
+<ul>
+  {{#each model as |announcement|}}
+    {{announcement-tile announcement=announcement}}
+  {{/each}}
+</ul>
+
+{{new-announcement save="save"}}
+
+{{#link-to 'index'}}Home{{/link-to}}
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
